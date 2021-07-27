@@ -8,7 +8,7 @@ class Home extends Component {
         this.state = {
             coffeeData: {},
             show: false,
-            server: process.env.REACT_APP_SERVER || 'http://localhost:3456',
+            server: 'http://localhost:3456',
         }
     }
     componentDidMount = async () => {

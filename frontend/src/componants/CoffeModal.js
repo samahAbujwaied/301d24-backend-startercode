@@ -24,7 +24,7 @@ export class CoffeModal extends Component {
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Update Ingredient</Form.Label>
-                            <Form.Control onChange={this.props.udateingrep} value={this.props.ingredients} type="text" placeholder="Update Ingredient" />
+                            <Form.Control onChange={this.props.updateingre} value={this.props.ingredients} type="text" placeholder="Update Ingredient" />
                         </Form.Group>
                         <Button onClick={(e)=>this.props.updateData(e)} variant="primary">Update</Button>
                     </Form>
