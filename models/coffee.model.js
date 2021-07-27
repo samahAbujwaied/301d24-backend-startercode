@@ -9,6 +9,7 @@ const coffeeSchema=mongoose.Schema({
     id:String
 });
 
+
 const coffeeModel=mongoose.model('favcofees',coffeeSchema);
 
 const coffeeSeed=()=>{
@@ -19,12 +20,12 @@ const coffeeSeed=()=>{
         img:'https://www.healthifyme.com/blog/wp-content/uploads/2019/09/Black-coffee-feature-image.jpg'
     })
     coffee.save()
-    // console.log(coffee)
+    console.log(coffee)
 }
+// coffeeSeed();
+module.exports=coffeeModel;
+// module.exports={
+//                 coffeeModel,
+//                 coffeeSeed
+//             };
 
-// module.exports=coffeeModel;
-/*module.exports={
-                coffeeModel,
-                coffeeSeed
-            };
-*/
